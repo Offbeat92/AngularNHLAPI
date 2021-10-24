@@ -1,0 +1,104 @@
+
+/****************************************************************/
+                    /* GENERAL */
+/****************************************************************/
+
+.wrapper {
+    background-color: #1B4F72 ;
+    
+
+}
+
+
+
+/****************************************************************/
+                    /* FONTS */
+/****************************************************************/
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+p {
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+
+
+/****************************************************************/
+                    /* IMAGES */
+/****************************************************************/
+.contentPicture {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/****************************************************************/
+                    /* LAYOUT AND BUTTONS */
+/****************************************************************/
+
+ul {
+    margin-top: 50px;
+}
+
+#buttons li {
+    padding: 5px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    width: 255px;
+}
+#buttons  li a {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffd200;
+    box-shadow: 7px 5px 5px  #081018;
+    transition: 0.7s;
+    width: 255px;
+}
+
+#buttons  li a:hover {
+    background-color: #2874A6;
+    width: 260px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+/****************************************************************/
+                    /* FOOTER */
+/****************************************************************/
+
+footer {
+    background-color:#081018;
+    height: 80px;
+    margin-top: 100px;
+}

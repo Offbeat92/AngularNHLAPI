@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <h1>This is a list of the top 45 active Swedish NHL players that are on their team roster before the start of the 2020-2021 season.</h1>
+    <h2>Click their name to see their stats for the previous season.</h2>
+                <!-- Goes through all the players in the json file, displays them and creates a link. -->
+                <ul id="buttons">
+                <li *ngFor="let player of arrPlayers.Swedish_Players; let i = index">
+                    <a [routerLink]="['/stats', player.id]"> {{player.name}} </a> 
+                      
+                </li>
+                 </ul>
+
+
+                 
+</div>
+<footer></footer>

@@ -1,0 +1,118 @@
+
+/****************************************************************/
+                    /* GENERAL */
+/****************************************************************/
+
+.wrapper {
+    text-align: center;
+}
+/****************************************************************/
+                    /* FONTS */
+/****************************************************************/
+
+h1, h2 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  
+        padding: 15px;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    
+}
+
+
+/****************************************************************/
+                    /* LAYOUT, TABLES AND STATDISPLAY */
+/****************************************************************/
+
+.info {
+    font-size: 25px;
+    color: #ffffff;
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 25px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.info p {
+    margin-top: 10px;
+}
+
+.infoRight {
+    font-size: 25px;
+    color: #ffffff;
+    padding: 5px;
+    display: inline-block;
+    text-align: start;
+    margin-left: 50px;
+}
+
+.infoRight p {
+    margin-top: 10px;
+}
+
+.stats {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}   
+table td {
+    font-size: 15px;
+    color: #383838;
+    margin: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #E8E8E8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+table th {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px;
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #383838;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+div #statClarification {
+    width: 490px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+#statClarification h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#statClarification p {
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+
+
+/****************************************************************/
+                    /* FOOTER */
+/****************************************************************/
+footer {
+    background-color:#081018;
+    height: 80px;
+    margin-top: 100px;
+}

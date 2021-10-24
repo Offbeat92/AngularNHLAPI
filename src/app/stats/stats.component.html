@@ -1,0 +1,86 @@
+<div class="wrapper">
+  <!-- Displays the information gathered from the API. -->
+  <div *ngIf="playerInfo">
+  <h1>{{ playerInfo.people[0].fullName | json}}</h1>
+</div>
+  <h2>Player information</h2>
+
+<div *ngIf="playerInfo" class="info">
+    <p>Team: {{ playerInfo.people[0].currentTeam.name| json}}</p>
+    <p>Number: {{ playerInfo.people[0].primaryNumber | json}}</p>
+    <p>Position: {{ playerInfo.people[0].primaryPosition.name| json}}</p>
+    <p>Birth date: {{ playerInfo.people[0].birthDate | json}}</p>
+</div>
+<div *ngIf="playerInfo" class="infoRight">
+  <p>Height: {{ playerInfo.people[0].height| json}}</p>
+  <p>Weight: {{ playerInfo.people[0].weight | json}}lbs</p>
+  <p>Born in: {{ playerInfo.people[0].birthCity| json}}</p>
+  <p>Age: {{ playerInfo.people[0].currentAge | json}} years old</p>
+</div>
+
+<h2>Stats</h2>
+<div *ngIf="playerStats" class="stats">
+    <table class="center">
+        <tr>
+            <th>Season</th>
+            <th>Games</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Points</th>
+            <th>+/-</th>
+            <th>PIM</th>
+            <th>TOI</th>
+          </tr>
+
+          <tr>
+            <td>{{playerStats.stats[0].splits[0].season}}</td>
+            <td>{{playerStats.stats[0].splits[0].stat.games}}</td>
+            <td>{{playerStats.stats[0].splits[0].stat.goals}}</td>
+            <td>{{playerStats.stats[0].splits[0].stat.assists}}</td>
+            <td>{{playerStats.stats[0].splits[0].stat.points}}</td>
+            <td>{{playerStats.stats[0].splits[0].stat.plusMinus}}</td>
+            <td>{{playerStats.stats[0].splits[0].stat.penaltyMinutes}}</td>
+            <td>{{playerStats.stats[0].splits[0].stat.timeOnIcePerGame}}</td>
+          </tr>
+    </table>
+
+    <!-- Gathers information on the alltime stats of the player in question -->
+    <div *ngIf="playerAlltimeStats" class="stats">
+      <table class="center">
+          <tr>
+              <th>Career</th>
+              <th>Games</th>
+              <th>Goals</th>
+              <th>Assists</th>
+              <th>Points</th>
+              <th>+/-</th>
+              <th>PIM</th>
+              <th>TOI</th>
+            </tr>
+  
+            <tr>
+              <td>---------</td>
+              <td>{{playerAlltimeStats.stats[0].splits[0].stat.games}}</td>
+              <td>{{playerAlltimeStats.stats[0].splits[0].stat.goals}}</td>
+              <td>{{playerAlltimeStats.stats[0].splits[0].stat.assists}}</td>
+              <td>{{playerAlltimeStats.stats[0].splits[0].stat.points}}</td>
+              <td>{{playerAlltimeStats.stats[0].splits[0].stat.plusMinus}}</td>
+              <td>{{playerAlltimeStats.stats[0].splits[0].stat.penaltyMinutes}}</td>
+              <td>{{playerAlltimeStats.stats[0].splits[0].stat.timeOnIcePerGame}}</td>
+            </tr>
+      </table>
+  </div>
+  <div id="statClarification">
+  <h2>Stat Clarifications</h2>
+  <p>Season: Which season the stats are from.</p>
+  <p>Games: Total number of games played during the season.</p>
+  <p>Goals: Goals scored by the player.</p>
+  <p>Assists: Amount of assists on scored team goals.</p>
+  <p>Points: The added number of goals and assists adds up to total points.</p>
+  <p>+/-: A balancing scale between being on the ice for goals scored for your team(+) and against your team(-).</p>
+  <p>PIM: A total of penalty minutes served by the player.</p>
+  <p>TOI: Total time on ice per game, meaning the average amount of time played by the player each game.</p>
+</div>  
+</div>
+</div>
+<footer></footer>
